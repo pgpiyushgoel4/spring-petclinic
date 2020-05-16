@@ -28,7 +28,7 @@ pipeline{
         }
         stage('Deploy'){
             steps{
-                sh echo "Tata@1234" | sudo -S pwd
+                
 		sh "sudo docker build . -t pgpiyushgoel4/petclinic"
 		sh "sudo docker run -d -p 8091:8080 anjurose/petclinic"
                     
