@@ -29,8 +29,8 @@ pipeline{
         stage('Deploy'){
             steps{
                 
-		sh "docker build . -t pgpiyushgoel4/petclinic"
-		sh "docker run -d -p 8091:8080 pgpiyushgoel4/petclinic"
+		sh "sudo docker build . -t pgpiyushgoel4/petclinic"
+		sh "sudo docker run -d -p 8091:8080 pgpiyushgoel4/petclinic"
                     
             }
         }
